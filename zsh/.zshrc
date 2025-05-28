@@ -46,6 +46,25 @@ alias ndf='cd ~/dotfiles/nvim/.config/nvim/ && nvim .'
 alias df='cd ~/dotfiles/nvim/.config/nvim/ && nvim .'
 
 ################################################################################
+# Pomodoro
+
+function work() {
+  local duration="${1:-55m}"
+  timer "$duration" && terminal-notifier -message 'Pomodoro' \
+    -title 'Work Timer is up! Take a Break 😊' \
+    -appIcon "$HOME/Pictures/pumpkin.png" \
+    -sound Crystal
+}
+
+function rest() {
+  local duration="${1:-5m}"
+  timer "$duration" && terminal-notifier -message 'Pomodoro' \
+    -title 'Break is over! Get back to work 😬' \
+    -appIcon "$HOME/Pictures/pumpkin.png" \
+    -sound Crystal
+}
+
+################################################################################
 # INITIALIZATIONS
 
 eval "$(starship init zsh)"
