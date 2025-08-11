@@ -3,9 +3,9 @@ alias python='python3'
 # Lazygit
 alias lg='lazygit'
 # [f]ile [o]pen: open anything, using rifle as the opener
-alias fo='cd ~ && fd . --type f --hidden --follow --exclude .git | fzf | while read -r file; do rifle "$file"; done'
+alias fo='fd . --type f --hidden --follow --exclude .git | fzf | while read -r file; do rifle "$file"; done'
 # [d]ir [c]hange
-alias dc='cd ~ && fd . --type d --hidden --follow --exclude .git | fzf | while read -r dir; do cd "$dir"; done'
+alias dc='fd . --type d --hidden --follow --exclude .git | fzf | while read -r dir; do cd "$dir"; done'
 # [s]ource .zshrc
 alias so='source ~/.zshrc'
 # [n]eovim [d]ot[f]iles
