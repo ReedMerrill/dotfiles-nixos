@@ -1,6 +1,6 @@
 add_newline = false
 # A minimal left prompt
-format = """$directory$git_branch\n$character"""
+format = """$python$directory$git_branch\n$character"""
 palette = "catppuccin_mocha"
 # move the rest of the prompt to the right
 command_timeout = 1000
