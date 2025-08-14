@@ -43,7 +43,7 @@ alias p="cd /Users/reed/projects"
 # [n]eovim [d]ot[f]iles
 alias ndf='cd ~/dotfiles/nvim/.config/nvim/ && nvim .'
 # [d]ot[f]iles
-alias df='cd ~/dotfiles/nvim/.config/nvim/ && nvim .'
+alias df='cd ~/dotfiles/ && nvim .'
 
 ################################################################################
 # Pomodoro
