@@ -117,3 +117,6 @@ function cd() {
 
 # Created by `pipx` on 2025-05-08 02:56:54
 export PATH="$PATH:/Users/reed/.local/bin"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+. "/Users/reed/.deno/env"
