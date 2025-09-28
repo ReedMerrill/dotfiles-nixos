@@ -2,6 +2,23 @@
 # wm independent hotkeys
 #
 
+# Volume controls
+XF86AudioRaiseVolume
+    pamixer -i 5
+
+XF86AudioLowerVolume
+    pamixer -d 5
+
+XF86AudioMute
+    pamixer -t
+
+# Brightness controls
+XF86MonBrightnessUp
+    brightnessctl set +10%
+
+XF86MonBrightnessDown
+    brightnessctl set 10%-
+
 # terminal emulator
 super + Return
   wezterm

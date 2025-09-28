@@ -2,23 +2,17 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+
 bspc monitor -d 1 2 3 4 5
 
 bspc config border_width         2
-bspc config window_gap          0
+bspc config window_gap           0
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-# Startup
-#
-# Start WezTerm on desktop 2
-bspc desktop ^2 -f
-wezterm  &
+bspc desktop -f ^1 && wezterm &
+sleep 1
+bspc desktop -f ^2 && zen-twilight &
 
-sleep 0.1
-
-# Start Zen on desktop 1
-bspc desktop ^1 -f
-zen-twilight &
