@@ -1,0 +1,30 @@
+{
+	"name": "Vimium C",
+	"@time": "10/2/2025, 2:44:45 PM",
+	"time": 1759437885486,
+	"environment": {
+		"extension": "2.12.3",
+		"platform": "linux",
+		"firefox": 142
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "f j k l ",
+			"pattern": ":https://www.youtube.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"unmap K",
+		"unmap J",
+		"map J nextTab",
+		"map K previousTab",
+		""
+	],
+	"vimSync": true
+}
